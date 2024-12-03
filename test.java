@@ -9,6 +9,7 @@ public class test {
     }
     @Test
     public void test_should_return_sum_of_array(){
-        
+        int [] arr = {1,2 ,3 ,4 ,2};
+        Assert.assertEquals(3, su.subArrSum(arr, 5));
     }
 }

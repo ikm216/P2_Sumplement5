@@ -46,4 +46,6 @@ public class su{
         }
         return diag1 == sum && diag2 == sum;
     }
+
+    
 }
