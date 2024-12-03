@@ -12,4 +12,8 @@ public class test {
         int [] arr = {1, 2, 3, 4, 2};
         Assert.assertEquals(2, su.subArrSum(arr, 6));
     }
+    @Test
+    public void test_should_return_Longest_Palindrome_Substring(){
+        Assert.assertEquals("a", su.palindromicSubstring("abcde"));
+    }
 }

@@ -48,7 +48,17 @@ public class su{
         }
         return diag1 == sum && diag2 == sum;
     }
-
+    /**
+ * Calculates the number of unique subarrays in a given array that sum to a specified target value.
+ * 
+ * A subarray is defined as a contiguous portion of the array. The method uses a HashSet to ensure 
+ * that duplicate subarrays (even if they sum to the same value) are not counted multiple times.
+ * 
+ * @param arr The input array of integers to search for subarrays.
+ * @param a   The target sum value to which subarrays are compared.
+ * @return    The number of unique subarrays that sum to the given target value.
+ * 
+ */
     public static int subArrSum(int[] arr, int a){
         {
             HashSet<String> set = new HashSet<>();
