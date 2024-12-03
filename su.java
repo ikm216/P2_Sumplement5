@@ -79,6 +79,13 @@ public class su{
             return count;
     }
 }
+/**
+     * Finds the longest palindromic substring in a given string.
+     *
+     * @param string The input string in which to search for the longest palindromic substring.
+     * @return The longest palindromic substring. Returns an empty string if the input is null or empty.
+     *
+     */
 public static String palindromicSubstring(String string) {
     if (string == null || string.length() < 1) {
         return "";
@@ -97,7 +104,14 @@ public static String palindromicSubstring(String string) {
     }
     return string.substring(beg, end + 1);
 }
-
+/**
+     * Expands outward from the middle of the string to find the length of the palindrome.
+     *
+     * @param string The input string.
+     * @param left   The starting left index of the potential palindrome.
+     * @param right  The starting right index of the potential palindrome.
+     * @return The length of the palindrome centered at the given indices.
+     */
 public static int expandFromMid(String string, int left, int right) {
     if (string == null || left > right) {
         return 0;
