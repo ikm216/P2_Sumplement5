@@ -14,6 +14,6 @@ public class test {
     }
     @Test
     public void test_should_return_Longest_Palindrome_Substring(){
-        Assert.assertEquals("a", su.palindromicSubstring("abcde"));
+        Assert.assertEquals("bb", su.palindromicSubstring("cbbd"));
     }
 }

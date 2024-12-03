@@ -79,4 +79,33 @@ public class su{
             return count;
     }
 }
+public static String palindromicSubstring(String string) {
+    if (string == null || string.length() < 1) {
+        return "";
+    }
+    int beg = 0;
+    int end = 0;
+
+    for (int i = 0; i < string.length(); i++) {
+        int len1 = expandFromMid(string, i, i); 
+        int len2 = expandFromMid(string, i, i + 1); 
+        int len = Math.max(len1, len2);
+        if (len > end - beg) {
+            beg = i - ((len - 1) / 2);
+            end = i + (len / 2);
+        }
+    }
+    return string.substring(beg, end + 1);
+}
+
+public static int expandFromMid(String string, int left, int right) {
+    if (string == null || left > right) {
+        return 0;
+    }
+    while (left >= 0 && right < string.length() && string.charAt(left) == string.charAt(right)) {
+        left--;
+        right++;
+    }
+    return right - left - 1; 
+}
 }
