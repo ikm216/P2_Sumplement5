@@ -1,4 +1,13 @@
 public class su{
+    /**
+     * Determines if a given 2D matrix is a magic square.
+     *
+     * A magic square is a square matrix where the sum of every row, column, 
+     * and both diagonals is the same.
+     *
+     * @param magic The 2D array to check.
+     * @return True if the matrix is a magic square, otherwise false.
+     */
     public static boolean magicSquares(int[][] magic) {
         int n = magic.length;
         if (n == 0 || magic[0].length != n){

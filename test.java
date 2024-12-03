@@ -7,4 +7,8 @@ public class test {
         };
         Assert.assertTrue(su.magicSquares(magic));
     }
+    @Test
+    public void test_should_return_sum_of_array(){
+        
+    }
 }
