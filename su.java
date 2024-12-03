@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 public class su{
     /**
      * Determines if a given 2D matrix is a magic square.
