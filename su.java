@@ -49,5 +49,24 @@ public class su{
         return diag1 == sum && diag2 == sum;
     }
 
+    public static int subArrSum(int[] arr, int a){
+        {
+            HashSet<String> set = new HashSet<>();
+            int count = 0;
     
+            for (int i = 0; i < arr.length; i++) {
+                int sum = 0;
+                StringBuilder string = new StringBuilder();
+                for (int j = i; j < arr.length; j++) {
+                    sum += arr[j];
+                    string.append(arr[j]).append(",");
+                    if (sum == a && !set.contains(string.toString())) {
+                        count++;
+                        set.add(string.toString());
+                    }
+                }
+            }
+            return count;
+    }
+}
 }
